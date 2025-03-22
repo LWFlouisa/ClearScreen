@@ -1,9 +1,10 @@
 // This calls the library required for clearing the screen.
 #include <stdio.h>
+#include <stdlib.h>
 
 // Creates a function that clear the screen using external shell scripting.
-void external_clear() {
-  printf("Not yet available."); 
+void shell_clear() {
+  system("clear");
 }
 
 // Creates a function that allows you to clear the screen using ansi control sequences.
@@ -22,8 +23,9 @@ void ansi_clear() {
 }
 
 int main() {
-  ansi_clear();
-
+  //ansi_clear();
+  shell_clear();
+  
   //printf("Hello World\n");
 
   return 0;
